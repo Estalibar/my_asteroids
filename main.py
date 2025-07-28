@@ -15,6 +15,7 @@ def main():
 				return
 		screen.fill("black")
 		player.draw(screen)
+		player.update(dt)
 		pygame.display.flip()
 		clock.tick(60)
 		dt = clock.tick(60) / 1000
@@ -23,4 +24,4 @@ def main():
 	print("Screen height: 720")
 
 if __name__ == "__main__":
-    main()
+	main()
