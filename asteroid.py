@@ -15,5 +15,5 @@ class Asteroid(CircleShape):
 						   self.radius,
 						   2)
 		
-	def update(self, dt):
+	def update(self, dt, *args, **kwargs):
 		self.position += self.velocity * dt
